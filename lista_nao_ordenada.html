@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Aula comentários, metadados, listas e layout">
+    <meta name="keywords" content="HTML, comentários, listas,layout, Elementos Semânticos">
+    <meta name="author" content="Ana Caroline F. Rodigues">
+    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="icon" href="imagem/favicon.ico" type="image/x-icon">
+    <title>Aula 09 - Lista não Ordenada</title>
+</head>
+<body>
+    <header id="topo">
+        <div id="acessibilidade">
+            <ul id="atalhos">
+                <li><a href="#conteudo" accesskey="1" title="Ir diretamente para o conteúdo">Ir para o conteúdo 
+                [1]</a></li>
+                <li><a href="#menu" accesskey="2" title="Ir diretamente para o menu">Ir para o menu [2]</a></li>
+                <li><a href="#rodape" accesskey="3" title="Ir diretamente para o rodapé">Ir para o rodapé [3]</a></li>
+
+                <li id="pgacess"><a href="acessibilidade.html" title="Ir para a página de acessbilidade">ACESSIBILIDADE</a></li>
+                <li class="contraste"><a href="javascript:void(0);" id="contraste">CONTRASTE PRETO</a></li>
+                <li class=contraste><a href="javascript:void(0);" id="sem_contraste">SEM CONTRASTE</a></li>
+                <li class="fonte"><a href="javascript:void(0);" id="aumentar">A+</a></li>
+                <li class="fonte"><a href="javascript:void(0);" id="aumentar">A-</a></li>
+            </ul>
+        </div>
+        <img id="logo" src="imagem/FATEC_ZONA_LESTE.png" alt="imagem com a palavra Fatex em cinza e a expressão Zona Leste em Vermelho">
+        <nav>
+            <label for="bt_menu"><img src="imagem/menu.png" alt="menu"></label>
+            <input type="checkbox" id="bt_menu">
+            <ul id="menu">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="comentarios.html">Comentários</a></li>
+                <li><a href="metadados.html">Metadados</a></li>
+                <li><a href="javascript:void(0);">Listas</a>
+                    <ul>
+                        <li><a href="lista_ordenada.html">Lista ordenada</a></li>
+                        <li><a href="lista_nao_ordenada.html">Lista não ordenada</a></li>
+                    </ul>
+                 </li>
+                <li><a href="layout.html">Layout</a></li>  
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="conteudo">
+        <h1>LISTA NÃO ORDENADA</h1>
+        <ul class="breadcrumb">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="javascript:void(0);">Listas</a></li>
+            <li><a>Lista não ordenada</a></li>
+        </ul>
+        <section>
+            <audio controls>
+                <source src="audio/LISTA NÃO ORDEN.mp3" type="audio/mp3">
+                Este navegador não suporta o elemento audio ou o formato de arquivo utilizado.
+            </audio>
+        </section>
+        <p class="paragrafo">Uma lista não ordenada começa com a tag &lt;ul&gt;. Cada item da lista começa com a tag &lt;li&gt;</P>  
+        <img class="imagem" src="imagem/ul.png" alt="Imagem com o conteúdo explicativo sobre listas nao ordenadas em HTML">
+    </main>
+    <footer id="rodape"><p>Desenvolvido por Ana Caroline Ferreira Rodrigues &copy; 2021.</p>
+        <p>
+            <a href="http://jigsaw.w3.org/css-validator/check/referer">
+                <img style="border:0;width:88px;height:31px"
+                    src="http://jigsaw.w3.org/css-validator/images/vcss"
+                    alt="CSS válido!" />
+            </a>
+        </p>
+             
+    </footer>
+</body>
+</html>
