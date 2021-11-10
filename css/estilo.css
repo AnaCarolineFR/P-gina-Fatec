@@ -1,0 +1,400 @@
+*{margin: 0; padding: 0}
+
+body{
+    background: #FFF;
+    font-size: 14px;
+}
+
+#topo{
+    width: 100%;
+    height: auto;
+    /*padding: 20px 0;*/
+    background: #BBBBBB;
+   /*position: relative;*/
+}
+
+#acessibilidade{
+    width: 100%;
+    height: auto;
+    background-color: white;
+}
+
+#atalhos{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    list-style: none;
+    padding-left: 2%;
+}
+
+#atalhos li{
+    display: inline;
+}
+
+#atalhos li a{
+    color: #000;
+}
+
+#atalhos li a:hover{
+    color: 3e3e3e;
+}
+
+#pgacess{
+    padding-left: 30%;
+}
+
+.contraste, .fonte{
+    padding-left: 5px;
+}
+
+#logo{
+    width: 20%;
+    height: auto;
+}
+
+nav{ 
+width: 100%;
+height: auto;
+background-color: brown; 
+float: left;
+}
+
+
+#menu {
+    list-style: none;
+    border: 1px solid #fff;
+    float: left; 
+    padding-left: 4%;
+   
+}
+#menu li{
+    
+    position: relative; /*O valor padrão do position é static*/
+    float: left;
+    border-right: 1px solid #FFF;   
+}
+
+#menu li a{
+    color: rgb(252, 252, 252);
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    padding: 5px 10px;
+    display: block;
+}
+
+#menu li a:hover{
+    background-color: #470404;
+    transition: 1s;
+
+}
+
+#menu li ul{
+    position: absolute;
+    top: 25px;
+    left: 0;
+    background-color: #b00000;
+    display: none;
+}
+
+#menu li:hover ul, #menu li.over ul{
+    display: block;
+}
+
+#menu li ul li{
+    border: 1px solid #FFF;
+    display: block;
+    width: 150px;
+}
+
+/*menu responsivo*/
+label[for="bt_menu"]{
+    display: none;
+}
+
+#bt_menu{
+    display: none; /*Oculta o checkbox do menu*/
+}
+
+
+.navegacao-a {
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+h1{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    padding-top: 3%;
+}
+
+h2{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-style: italic;
+}
+
+
+
+#conteudo{
+    width: 100%;
+    min-height: 600px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    text-align: justify;
+    background-color: #FFF;
+}
+
+#conteudo h1{
+    text-align: center;
+}
+
+.imagem{
+    width: 65%;
+    height: auto; 
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 3%;
+}
+
+.center{
+    text-align: center;
+    padding-top: 1%;
+}
+
+
+section{
+    padding: 3%;
+    
+}
+iframe{
+    width: 560px;
+    height: 315px;
+    
+   
+}
+
+
+.paragrafo{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    text-align: center;
+}
+
+#rodape{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.8em;
+    color: #fff;
+    background-color: 3e3e3e;
+    padding-top: 1%;
+    text-align: center;
+    width: 100%;
+    height: 60px;
+    background: #BBBBBB;
+    /*font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-weight: bold;
+    width: 100%;
+    height: 150px;
+    font-size: 14px;*/
+
+}
+
+input, select{
+    width: 40%;
+    height: 40px;
+    background-color: #dcdcdc;
+    color:#000;
+    border-radius: 15px; /*deixa as bordas arredondadas*/
+    padding: 5px; /*5px*/
+    margin-left: 5px;
+}
+
+label, legend{
+    font-weight: bold;
+    font-size: 1.2em;
+    margin-left: 5px;
+
+}
+
+fieldset{
+    border-color: #500101;
+    border-radius: 15px;
+
+}
+
+textarea{
+    width:40%;
+    padding: 5px;
+    margin-left: 5px;
+}
+
+input[type=submit]{
+    width: 15%;
+    height: 40px;
+    background-color: #b00000;
+    color:white;
+
+} /*seletor de atributos é indicado entre[]*/
+
+input[type=reset]{
+    width: 15%;
+    height: 40px;
+    background-color: #b00000;
+    color:white;
+
+}
+
+.required:after{
+    content: " *";
+    color: red;
+
+} /*pseudo classe after acrescenta elementos depois da classe*/
+
+.breadcrumb{
+    padding-left: 2%;
+    list-style: none; /*tira os marcadores da lista não ordenada*/
+
+}
+
+.breadcrumb li{
+    display: inline;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 0.7em;
+    color: #000;
+}
+
+.breadcrumb li a{
+    color: #3e3e3e;
+    text-decoration: none; /*tira o sublinhado do link*/
+
+}
+
+.breadcrumb li+li:before{
+    content: "/\00a0"; /*código ansi para adicionar uma / no breadcrumb*/
+    padding: 6px;
+    color: #000;
+}
+
+.breadcrumb li a:hover{
+    color: #000;
+    text-decoration: underline;
+
+}
+
+/*media queries*/
+
+/*Media querie menu responsivo*/
+
+@media screen and (max-width:630px){
+    #menu{
+        display: none;
+    }
+    label[for="bt_menu"]{
+        display: block;
+    }
+    #bt_menu:checked~ #menu{
+        display: block;
+        border: none;
+    }
+    #menu li{
+        position: relative;
+        float: left;
+        width: 100%;
+        border: none;
+    }
+
+    #menu li ul{
+        position: static;
+        width: 100%;
+        float: left;
+        border: none;
+    }
+
+    #menu li ul li{
+        position: relative;
+        width: 100%;
+        float: left;
+        display: block;
+        border: none;
+
+    }
+}
+
+/*media queries*/
+/*Acessibilidade*/
+
+@media screen and (max-width: 1440px) {
+
+    #pgacess{
+        padding-left: 30%;
+    }
+    .contraste, .fonte{
+        padding-left: 5px;
+    }
+
+}
+
+@media screen and (max-width:1280px) {
+    #pgacess{
+        padding-left: 20%;
+    }
+    
+}
+
+@media screen and (max-width: 1024px){
+    #pgacess{
+        padding: 15%;
+    }
+}
+
+
+@media screen and (max-width:630px){
+     ul#atalhos li{
+        display: none;
+    }
+    ul#atalhos li#pgacess{
+        display: inline-block;
+    }
+    ul#atalhos li.contraste{
+        display: inline-block;
+    }
+    ul#atalhos li.fonte{
+        display: inline-block;
+    }
+}
+
+
+@media screen and (max-width: 420px) {
+    #atalhos{
+        font-size: 0.7em;
+    }
+    ul#atalhos li#pgacess{
+        display: inline-block;
+        padding-left: 2%;
+    }
+    ul#atalhos li.contraste{
+        display: inline-block;
+    }
+    ul#atalhos li.fonte{
+        display: inline-block;
+    }  
+}
+
+
+/*media querie de ajuste de videos*/
+@media screen and (max-widht:630px){
+    iframe{
+        width: 560px;
+        height: 315px;
+    }
+}
+
+/*media querie ajuste imagem*/
+
+@media screen and  (max-widht:630px){
+    #imagem{
+        width: 60%;
+        height: auto;
+    }
+}
